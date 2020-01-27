@@ -1,0 +1,926 @@
+type in list of directories: lulcClassification/raster_data/b432 lulcClassification/raster_data/b764 lulcClassification/raster_data/fullstack lulcClassification/raster_data/pca
+['lulcClassification/raster_data/b432', 'lulcClassification/raster_data/b764', 'lulcClassification/raster_data/fullstack', 'lulcClassification/raster_data/pca']
+type in roi raster: roi_data/roi.tif
+lulcClassification/raster_data/b432
+roi_data/roi.tif
+LC81280482016128LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 76.368399941%
+Band a importance: 0.381261509031
+Band b importance: 0.308373187363
+Band c importance: 0.310365303606
+predict       1      2       3     All
+truth                                 
+1        385509      6      52  385567
+2            86  50564      28   50678
+3           292      7  234075  234374
+All      385887  50577  234155  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016080LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 76.6022137756%
+Band a importance: 0.425804021649
+Band b importance: 0.288500328044
+Band c importance: 0.285695650308
+predict       1      2       3     All
+truth                                 
+1        385472     16      79  385567
+2           201  50451      26   50678
+3           373     15  233986  234374
+All      386046  50482  234091  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014090LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 77.8018517221%
+Band a importance: 0.379826998257
+Band b importance: 0.307357071473
+Band c importance: 0.31281593027
+predict       1      2       3     All
+truth                                 
+1        385525      7      35  385567
+2           129  50518      31   50678
+3           284      5  234085  234374
+All      385938  50530  234151  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016048LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 74.6039107153%
+Band a importance: 0.420404067433
+Band b importance: 0.297596232431
+Band c importance: 0.281999700136
+predict       1      2       3     All
+truth                                 
+1        385498     16      53  385567
+2           144  50505      29   50678
+3           334      3  234037  234374
+All      385976  50524  234119  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016064LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 75.7604541476%
+Band a importance: 0.383499500861
+Band b importance: 0.300356357237
+Band c importance: 0.316144141902
+predict       1      2       3     All
+truth                                 
+1        385494      8      65  385567
+2           145  50505      28   50678
+3           319      7  234048  234374
+All      385958  50520  234141  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+roi_data
+ERROR 4: `roi_data' not recognised as a supported file format.
+
+Traceback (most recent call last):
+  File "classifyRasters.py", line 55, in <module>
+    classify(directory, roiraster)
+  File "classifyRasters.py", line 38, in classify
+    supervisedClassification_ensemble.randomforestSupervisedClassify(file, roiraster)
+  File "/home/seanandrewchen/Dropbox/usace/bkk/udonthani_coding/python/siteSuitability/lulcClassification/supervisedClassification_ensemble.py", line 54, in randomforestSupervisedClassify
+    img = np.zeros((img_ds.RasterYSize, img_ds.RasterXSize, img_ds.RasterCount),
+seanandrewchen@seanandrewchen-laptop:~/Dropbox/usace/bkk/udonthani_coding/python/siteSuitability$ python classifyRasters.py 
+type in list of directories: lulcClassification/raster_data/b764 lulcClassification/raster_data/fullstack lulcClassification/raster_data/pca
+['lulcClassification/raster_data/b764', 'lulcClassification/raster_data/fullstack', 'lulcClassification/raster_data/pca']
+type in roi raster: roi_data/roi.tif
+lulcClassification/raster_data/b764
+roi_data/roi.tif
+LC81280482016080LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 80.9238927021%
+Band a importance: 0.369887409124
+Band b importance: 0.275609387765
+Band c importance: 0.354503203112
+predict       1      2       3     All
+truth                                 
+1        385529      1      37  385567
+2            68  50597      13   50678
+3           288      4  234082  234374
+All      385885  50602  234132  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482015077LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 85.0117577939%
+Band a importance: 0.36640866678
+Band b importance: 0.304087619618
+Band c importance: 0.329503713602
+predict       1      2       3     All
+truth                                 
+1        385541      2      24  385567
+2            93  50575      10   50678
+3           257      5  234112  234374
+All      385891  50582  234146  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482013343LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 82.4794704594%
+Band a importance: 0.374375307167
+Band b importance: 0.351274649666
+Band c importance: 0.274350043167
+predict       1      2       3     All
+truth                                 
+1        385532      4      31  385567
+2            83  50589       6   50678
+3           265     14  234095  234374
+All      385880  50607  234132  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014330LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 80.8505276468%
+Band a importance: 0.387081999919
+Band b importance: 0.37496215213
+Band c importance: 0.237955847951
+predict       1      2       3     All
+truth                                 
+1        385530      3      34  385567
+2            43  50628       7   50678
+3           257      6  234111  234374
+All      385830  50637  234152  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482013327LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.7080935673%
+Band a importance: 0.401639756271
+Band b importance: 0.362726424158
+Band c importance: 0.235633819571
+predict       1      2       3     All
+truth                                 
+1        385530      3      34  385567
+2            53  50613      12   50678
+3           259     12  234103  234374
+All      385842  50628  234149  670619
+Reshaped from (2713, 3005, 3) to (8152565, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482015093LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.3918186034%
+Band a importance: 0.363526954673
+Band b importance: 0.32616431303
+Band c importance: 0.310308732297
+predict       1      2       3     All
+truth                                 
+1        385532      1      34  385567
+2            63  50599      16   50678
+3           267     11  234096  234374
+All      385862  50611  234146  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016064LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 80.3159469088%
+Band a importance: 0.367537869782
+Band b importance: 0.291410270559
+Band c importance: 0.34105185966
+predict       1      2       3     All
+truth                                 
+1        385535      2      30  385567
+2            58  50606      14   50678
+3           264      8  234102  234374
+All      385857  50616  234146  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014154LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 79.5523240469%
+Band a importance: 0.379584616081
+Band b importance: 0.342713410578
+Band c importance: 0.277701973341
+predict       1      2       3     All
+truth                                 
+1        385530      0      37  385567
+2            66  50585      27   50678
+3           200      5  234169  234374
+All      385796  50590  234233  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+
+
+type in list of directories: lulcClassification/raster_data/b764 lulcClassification/raster_data/fullstack
+['lulcClassification/raster_data/b764', 'lulcClassification/raster_data/fullstack']
+type in roi raster: roi_data/roi.tif
+lulcClassification/raster_data/b764
+roi_data/roi.tif
+LC81280482013279LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 83.1436329719%
+Band a importance: 0.430485426598
+Band b importance: 0.342553997537
+Band c importance: 0.226960575865
+predict       1      2       3     All
+truth                                 
+1        385530      6      31  385567
+2            43  50628       7   50678
+3           299      6  234069  234374
+All      385872  50640  234107  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016048LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 79.9488234005%
+Band a importance: 0.351932499461
+Band b importance: 0.322833017929
+Band c importance: 0.32523448261
+predict       1      2       3     All
+truth                                 
+1        385546      2      19  385567
+2            63  50608       7   50678
+3           288      4  234082  234374
+All      385897  50614  234108  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014058LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.2869900793%
+Band a importance: 0.384880298754
+Band b importance: 0.292058161129
+Band c importance: 0.323061540117
+predict       1      2       3     All
+truth                                 
+1        385534      5      28  385567
+2            63  50601      14   50678
+3           246      4  234124  234374
+All      385843  50610  234166  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016112LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.8871818424%
+Band a importance: 0.342745731656
+Band b importance: 0.295134283826
+Band c importance: 0.362119984519
+predict       1      2       3     All
+truth                                 
+1        385524      4      39  385567
+2            67  50598      13   50678
+3           251      9  234114  234374
+All      385842  50611  234166  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014010LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.691989043%
+Band a importance: 0.40071009567
+Band b importance: 0.37047095808
+Band c importance: 0.22881894625
+predict       1      2       3     All
+truth                                 
+1        385531      6      30  385567
+2            79  50587      12   50678
+3           244      7  234123  234374
+All      385854  50600  234165  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014026LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.060482927%
+Band a importance: 0.358167571738
+Band b importance: 0.382291397178
+Band c importance: 0.259541031084
+predict       1      2       3     All
+truth                                 
+1        385533      2      32  385567
+2            70  50600       8   50678
+3           218     10  234146  234374
+All      385821  50612  234186  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014090LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.4554911209%
+Band a importance: 0.354032725739
+Band b importance: 0.309482664227
+Band c importance: 0.336484610034
+predict       1      2       3     All
+truth                                 
+1        385544      1      22  385567
+2            62  50605      11   50678
+3           253      5  234116  234374
+All      385859  50611  234149  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016128LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 80.6228275668%
+Band a importance: 0.418042662094
+Band b importance: 0.287650332486
+Band c importance: 0.29430700542
+predict       1      2       3     All
+truth                                 
+1        385539      6      22  385567
+2            46  50612      20   50678
+3           196      4  234174  234374
+All      385781  50622  234216  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+
+
+
+LC81280482014026LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 76.5424182733%
+Band a importance: 0.391013871267
+Band b importance: 0.302938942744
+Band c importance: 0.306047185989
+predict       1      2       3     All
+truth                                 
+1        385511      6      50  385567
+2           149  50524       5   50678
+3           298      5  234071  234374
+All      385958  50535  234126  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014010LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 76.6731929754%
+Band a importance: 0.397745898032
+Band b importance: 0.323051070966
+Band c importance: 0.279203031001
+predict       1      2       3     All
+truth                                 
+1        385504      7      56  385567
+2           131  50535      12   50678
+3           289      4  234081  234374
+All      385924  50546  234149  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482013343LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 79.6662486449%
+Band a importance: 0.428858697456
+Band b importance: 0.29231372019
+Band c importance: 0.278827582354
+predict       1      2       3     All
+truth                                 
+1        385470     12      85  385567
+2           156  50502      20   50678
+3           289     13  234072  234374
+All      385915  50527  234177  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482013279LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 79.6146545207%
+Band a importance: 0.389706778908
+Band b importance: 0.317936463463
+Band c importance: 0.292356757629
+predict       1      2       3     All
+truth                                 
+1        385491     19      57  385567
+2            77  50581      20   50678
+3           285     17  234072  234374
+All      385853  50617  234149  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482013327LGN00_B432_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 78.6541985837%
+Band a importance: 0.421468584572
+Band b importance: 0.309207620136
+Band c importance: 0.269323795292
+predict       1      2       3     All
+truth                                 
+1        385505      5      57  385567
+2            91  50571      16   50678
+3           266      2  234106  234374
+All      385862  50578  234179  670619
+Reshaped from (2713, 3005, 3) to (8152565, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+Traceback (most recent call last):
+  File "classifyRasters.py", line 57, in <module>
+    classify(directory, roiraster)
+  File "classifyRasters.py", line 29, in classify
+    os.chdir(maindirectory)
+seanandrewchen@seanandrewchen-laptop:~/Dropbox/usace/bkk/udonthani_coding/python/siteSuitability$ python classifyRasters.py 
+type in list of directories: lulcClassification/raster_data/b764
+['lulcClassification/raster_data/b764']
+type in roi raster: roi_data/roi.tif
+lulcClassification/raster_data/b764
+roi_data/roi.tif
+LC81280482016128LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 80.5782418929%
+Band a importance: 0.399922693877
+Band b importance: 0.301849426299
+Band c importance: 0.298227879824
+predict       1      2       3     All
+truth                                 
+1        385529      8      30  385567
+2            48  50604      26   50678
+3           184      0  234190  234374
+All      385761  50612  234246  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016016LGN00_B764_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 3)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.3127871414%
+Band a importance: 0.349913119463
+Band b importance: 0.358331715242
+Band c importance: 0.291755165296
+predict       1      2       3     All
+truth                                 
+1        385529      4      34  385567
+2            39  50634       5   50678
+3           286     15  234073  234374
+All      385854  50653  234112  670619
+Reshaped from (2713, 3004, 3) to (8149852, 3)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+seanandrewchen@seanandrewchen-laptop:~/Dropbox/usace/bkk/udonthani_coding/python/siteSuitability$ python classifyRasters.py 
+type in list of directories: lulcClassification/raster_data/fullstack
+['lulcClassification/raster_data/fullstack']
+type in roi raster: roi_data/roi.tif
+lulcClassification/raster_data/fullstack
+roi_data/roi.tif
+LC81280482016064LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 88.1935942763%
+Band a importance: 0.0892287537856
+Band b importance: 0.0850483721384
+Band c importance: 0.0966260768889
+predict       1      2       3     All
+truth                                 
+1        385558      1       8  385567
+2            22  50655       1   50678
+3           137      3  234234  234374
+All      385717  50659  234243  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014090LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 89.1228849764%
+Band a importance: 0.0971520022282
+Band b importance: 0.088264868933
+Band c importance: 0.0851944595473
+predict       1      2       3     All
+truth                                 
+1        385559      0       8  385567
+2             8  50668       2   50678
+3           142      3  234229  234374
+All      385709  50671  234239  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482015093LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 88.4945102957%
+Band a importance: 0.0842816198495
+Band b importance: 0.0838960428765
+Band c importance: 0.0883805938813
+predict       1      2       3     All
+truth                                 
+1        385551      1      15  385567
+2            20  50657       1   50678
+3           174      8  234192  234374
+All      385745  50666  234208  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014330LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 87.7863585732%
+Band a importance: 0.0894203505945
+Band b importance: 0.0705559201755
+Band c importance: 0.0868955639296
+predict       1      2       3     All
+truth                                 
+1        385558      0       9  385567
+2             5  50672       1   50678
+3           151      0  234223  234374
+All      385714  50672  234233  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014154LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 86.879435268%
+Band a importance: 0.0834249089259
+Band b importance: 0.0884180597964
+Band c importance: 0.0951675466737
+predict       1      2       3     All
+truth                                 
+1        385559      0       8  385567
+2             4  50668       6   50678
+3           138      3  234233  234374
+All      385701  50671  234247  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014010LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 87.5407645772%
+Band a importance: 0.0792418237917
+Band b importance: 0.0678892721852
+Band c importance: 0.0769645222316
+predict       1      2       3     All
+truth                                 
+1        385551      1      15  385567
+2            15  50662       1   50678
+3           155      3  234216  234374
+All      385721  50666  234232  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016080LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 88.6373633911%
+Band a importance: 0.0962010584228
+Band b importance: 0.0991049656712
+Band c importance: 0.111946470869
+predict       1      2       3     All
+truth                                 
+1        385561      1       5  385567
+2            42  50633       3   50678
+3           147      3  234224  234374
+All      385750  50637  234232  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482015077LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 91.2307882717%
+Band a importance: 0.0902670698973
+Band b importance: 0.0982304848302
+Band c importance: 0.130427335438
+predict       1      2       3     All
+truth                                 
+1        385560      1       6  385567
+2            35  50640       3   50678
+3           122      3  234249  234374
+All      385717  50644  234258  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016048LGN00_fullstacked_pansharpened.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 8)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 87.0799962423%
+Band a importance: 0.0864035235649
+Band b importance: 0.0930549410619
+Band c importance: 0.0857818968753
+predict       1      2       3     All
+truth                                 
+1        385554      0      13  385567
+2            16  50657       5   50678
+3           161      1  234212  234374
+All      385731  50658  234230  670619
+Reshaped from (2713, 3004, 8) to (8149852, 8)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+seanandrewchen@seanandrewchen-laptop:~/Dropbox/usace/bkk/udonthani_coding/python/siteSuitability$ python classifyRasters.py 
+type in list of directories: lulcClassification/raster_data/pca
+['lulcClassification/raster_data/pca']
+type in roi raster: roi_data/roi.tif
+lulcClassification/raster_data/pca
+roi_data/roi.tif
+LC81280482014330LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 85.4009504652%
+Band a importance: 0.363459634463
+Band b importance: 0.246387588171
+Band c importance: 0.152772631066
+predict       1      2       3     All
+truth                                 
+1        385541      4      22  385567
+2            18  50650      10   50678
+3           197     10  234167  234374
+All      385756  50664  234199  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014154LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 81.191704977%
+Band a importance: 0.319272233003
+Band b importance: 0.289301963151
+Band c importance: 0.184958448929
+predict       1      2       3     All
+truth                                 
+1        385535      4      28  385567
+2            47  50618      13   50678
+3           208      3  234163  234374
+All      385790  50625  234204  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482015077LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 87.5255547487%
+Band a importance: 0.413572520984
+Band b importance: 0.251547916149
+Band c importance: 0.20313434366
+predict       1      2       3     All
+truth                                 
+1        385543      2      22  385567
+2            70  50604       4   50678
+3           227     12  234135  234374
+All      385840  50618  234161  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014010LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 85.2767368655%
+Band a importance: 0.440683480978
+Band b importance: 0.221132835733
+Band c importance: 0.151835785115
+predict       1      2       3     All
+truth                                 
+1        385539      5      23  385567
+2            25  50650       3   50678
+3           213      9  234152  234374
+All      385777  50664  234178  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482015093LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 84.90618369%
+Band a importance: 0.381877038759
+Band b importance: 0.245370938103
+Band c importance: 0.218297474151
+predict       1      2       3     All
+truth                                 
+1        385527      5      35  385567
+2            47  50624       7   50678
+3           230     11  234133  234374
+All      385804  50640  234175  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016064LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 84.0128299377%
+Band a importance: 0.383650539542
+Band b importance: 0.253630617162
+Band c importance: 0.204222683404
+predict       1      2       3     All
+truth                                 
+1        385530      6      31  385567
+2            40  50627      11   50678
+3           258      8  234108  234374
+All      385828  50641  234150  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016048LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 83.0927844275%
+Band a importance: 0.387444643343
+Band b importance: 0.281760620547
+Band c importance: 0.165562624586
+predict       1      2       3     All
+truth                                 
+1        385533      1      33  385567
+2            41  50628       9   50678
+3           262      9  234103  234374
+All      385836  50638  234145  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482016080LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 84.3036060714%
+Band a importance: 0.386167325729
+Band b importance: 0.259072724448
+Band c importance: 0.206954078792
+predict       1      2       3     All
+truth                                 
+1        385542      1      24  385567
+2            48  50623       7   50678
+3           228      5  234141  234374
+All      385818  50629  234172  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+LC81280482014090LGN00_fullstacked_pansharpened_PCAReduced.TIF
+We have [31 61 70 ..., 13  2  0] samples
+The training data include 3 classes: [1 2 3]
+Our X matrix is sized: (670619, 4)
+Our y array is sized: (670619,)
+Our OOB prediction of accuracy is: 84.8678608867%
+Band a importance: 0.386085429676
+Band b importance: 0.283558684478
+Band c importance: 0.183548126293
+predict       1      2       3     All
+truth                                 
+1        385543      1      23  385567
+2            49  50618      11   50678
+3           223      6  234145  234374
+All      385815  50625  234179  670619
+Reshaped from (2713, 3004, 4) to (8149852, 4)
+ERROR 4: Unable to open EPSG support file gcs.csv.
+Try setting the GDAL_DATA environment variable to point to the
+directory containing EPSG csv files.
+
